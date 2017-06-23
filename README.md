@@ -70,6 +70,8 @@ services:
   node:
     image: valian/docker-node-autoinstaller
     command: npm run dev
+    ports:
+      - 3000:3000
     volumes:
       - .:/srv
 ```
