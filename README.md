@@ -26,15 +26,6 @@ docker run --rm \
   valian/docker-node-autoinstaller \
   npm run dev
 
-# you can change directory of container project directory
-
-docker run --rm \
-  -v $PWD:/my-dir \
-  -e PROJECT_PATH=/my-dir \
-  valian/docker-node-autoinstaller \
-  npm run dev
-
-
 # there are a couple of utility commands, too:
 # clean - clears node_modules directory
 

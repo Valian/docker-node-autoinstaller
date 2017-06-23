@@ -1,8 +1,7 @@
 FROM node
 
-ENV PROJECT_PATH=/srv
+WORKDIR /srv
 
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["build"]
