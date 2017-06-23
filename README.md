@@ -4,7 +4,7 @@ Base node image created because I was tired of rebuilding node image all the tim
 
 Basically, it performs quick check before every container command if any new package appeared, and if yes, installs it. Thanks to this, we don't have to reinstall all packages after every change (as with `docker build`). Volume is required to work properly.
 
-You can any of the following versions:
+You can use any of the following versions:
     
     # based on node
     valian/docker-node-autoinstaller, valian/docker-node-autoinstaller:latest
