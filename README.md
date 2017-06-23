@@ -16,13 +16,16 @@ You can any of the following versions:
 ## Usage
 
 Add to your `.gitignore` file `.package.json.hash`:
-    
-    echo ".package.json.hash" >> .gitignore
+
+```bash
+echo ".package.json.hash" >> .gitignore
+```   
 
 
 Now you can run docker container, or use it as a base for your image
 
-```
+```bash
+
 cd /path/to/your/project/with/package.json
 
 # instead of npm run dev, you can pass any command you want
@@ -63,7 +66,7 @@ You can also extend this image in the same way as a normal node image.
 
 Example `docker-compose.yml` for convenient usage:
 
-```
+```yaml
 version: '2'
 
 services:
@@ -74,6 +77,7 @@ services:
       - 3000:3000
     volumes:
       - .:/srv
+
 ```
 
 Copy it to your project root and now you can start project with 'docker-compose up'
